@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				montserrat: ['Montserrat', 'sans-serif'],
+				inter: ['Inter', 'sans-serif']
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -74,6 +78,11 @@ export default {
 				red: {
 					500: '#dc2626',
 					600: '#b91c1c'
+				},
+				brand: {
+					primary: '#111111',
+					secondary: '#333333',
+					accent: '#0070f3'
 				}
 			},
 			borderRadius: {
