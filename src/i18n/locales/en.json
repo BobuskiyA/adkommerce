@@ -1,0 +1,47 @@
+
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "whyUs": "Why Us",
+    "team": "Our Team",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "growBusiness": "Grow Your Business with",
+    "dataDriven": "Data-Driven Marketing",
+    "subtitle": "Get your first 10 qualified appointments in just 5 days, starting at $0 with our risk-free marketing solutions.",
+    "getStarted": "Get Started",
+    "talkExpert": "Talk to an Expert",
+    "feature1": "Results in 5 Days",
+    "feature2": "US-Based Businesses",
+    "feature3": "Risk-Free Solutions"
+  },
+  "cta": {
+    "title": "Ready to Get 10+ New Appointments in 5 Days?",
+    "subtitle": "Join our clients who are growing their businesses with our risk-free, results-focused marketing solutions.",
+    "getStarted": "Get Started Today",
+    "scheduleCall": "Schedule a Call"
+  },
+  "team": {
+    "title": "Meet Our Expert Team",
+    "subtitle": "The passionate professionals behind AdKommerce's success stories",
+    "photoPlaceholder": "Photo Coming Soon",
+    "member1": {
+      "name": "John Smith",
+      "position": "Founder & CEO",
+      "bio": "With 15+ years of experience in digital marketing, John has helped hundreds of businesses achieve remarkable growth."
+    },
+    "member2": {
+      "name": "Sarah Johnson",
+      "position": "Marketing Strategist",
+      "bio": "Former Google strategist with expertise in creating high-converting campaigns for businesses of all sizes."
+    },
+    "member3": {
+      "name": "Michael Brown",
+      "position": "Data Analyst",
+      "bio": "Analytics expert who transforms complex data into actionable insights that drive business growth."
+    }
+  }
+}

@@ -1,0 +1,47 @@
+
+{
+  "navbar": {
+    "home": "Strona główna",
+    "services": "Usługi",
+    "whyUs": "Dlaczego my",
+    "team": "Nasz zespół",
+    "contact": "Kontakt",
+    "getStarted": "Rozpocznij"
+  },
+  "hero": {
+    "growBusiness": "Rozwijaj swój biznes dzięki",
+    "dataDriven": "Marketingowi opartemu na danych",
+    "subtitle": "Uzyskaj pierwszych 10 kwalifikowanych spotkań w ciągu zaledwie 5 dni, zaczynając od €0 z naszymi rozwiązaniami marketingowymi bez ryzyka.",
+    "getStarted": "Rozpocznij",
+    "talkExpert": "Porozmawiaj z ekspertem",
+    "feature1": "Wyniki w 5 dni",
+    "feature2": "Dla firm w UE",
+    "feature3": "Rozwiązania bez ryzyka"
+  },
+  "cta": {
+    "title": "Gotowy na 10+ nowych spotkań w ciągu 5 dni?",
+    "subtitle": "Dołącz do naszych klientów, którzy rozwijają swoje firmy dzięki naszym rozwiązaniom marketingowym zorientowanym na wyniki.",
+    "getStarted": "Rozpocznij dziś",
+    "scheduleCall": "Zaplanuj rozmowę"
+  },
+  "team": {
+    "title": "Poznaj nasz zespół ekspertów",
+    "subtitle": "Pasjonaci, którzy stoją za historiami sukcesu AdKommerce",
+    "photoPlaceholder": "Zdjęcie wkrótce",
+    "member1": {
+      "name": "Jan Kowalski",
+      "position": "Założyciel i CEO",
+      "bio": "Z ponad 15-letnim doświadczeniem w marketingu cyfrowym, Jan pomógł setkom firm osiągnąć imponujący wzrost."
+    },
+    "member2": {
+      "name": "Anna Nowak",
+      "position": "Strateg marketingowy",
+      "bio": "Była strateg Google z doświadczeniem w tworzeniu wysoko konwertujących kampanii dla firm każdej wielkości."
+    },
+    "member3": {
+      "name": "Piotr Wiśniewski",
+      "position": "Analityk danych",
+      "bio": "Ekspert analityczny, który przekształca złożone dane w praktyczne spostrzeżenia napędzające wzrost biznesu."
+    }
+  }
+}
