@@ -1,5 +1,7 @@
 
 import { useTranslation } from "react-i18next";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const TeamSection = () => {
   const { t } = useTranslation();
@@ -17,48 +19,50 @@ const TeamSection = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Team member placeholders - will be replaced with actual team data */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <Card className="bg-white shadow-md overflow-hidden">
             <div className="aspect-w-3 aspect-h-4 bg-gray-200">
-              {/* Placeholder for team member photo */}
               <div className="flex items-center justify-center h-64 bg-gray-200 text-gray-400">
-                {t('team.photoPlaceholder')}
+                <Avatar className="h-32 w-32">
+                  <AvatarFallback className="text-xl bg-brand-accent text-white">KH</AvatarFallback>
+                </Avatar>
               </div>
             </div>
-            <div className="p-6">
+            <CardHeader className="p-6">
               <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member1.name')}</h3>
               <p className="text-brand-accent mb-3 font-inter">{t('team.member1.position')}</p>
               <p className="text-gray-600 font-inter">{t('team.member1.bio')}</p>
-            </div>
-          </div>
+            </CardHeader>
+          </Card>
           
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <Card className="bg-white shadow-md overflow-hidden">
             <div className="aspect-w-3 aspect-h-4 bg-gray-200">
-              {/* Placeholder for team member photo */}
               <div className="flex items-center justify-center h-64 bg-gray-200 text-gray-400">
-                {t('team.photoPlaceholder')}
+                <Avatar className="h-32 w-32">
+                  <AvatarFallback className="text-xl bg-brand-accent text-white">OB</AvatarFallback>
+                </Avatar>
               </div>
             </div>
-            <div className="p-6">
+            <CardHeader className="p-6">
               <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member2.name')}</h3>
               <p className="text-brand-accent mb-3 font-inter">{t('team.member2.position')}</p>
               <p className="text-gray-600 font-inter">{t('team.member2.bio')}</p>
-            </div>
-          </div>
+            </CardHeader>
+          </Card>
           
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <Card className="bg-white shadow-md overflow-hidden">
             <div className="aspect-w-3 aspect-h-4 bg-gray-200">
-              {/* Placeholder for team member photo */}
               <div className="flex items-center justify-center h-64 bg-gray-200 text-gray-400">
-                {t('team.photoPlaceholder')}
+                <Avatar className="h-32 w-32">
+                  <AvatarFallback className="text-xl bg-brand-accent text-white">AK</AvatarFallback>
+                </Avatar>
               </div>
             </div>
-            <div className="p-6">
+            <CardHeader className="p-6">
               <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member3.name')}</h3>
               <p className="text-brand-accent mb-3 font-inter">{t('team.member3.position')}</p>
               <p className="text-gray-600 font-inter">{t('team.member3.bio')}</p>
-            </div>
-          </div>
+            </CardHeader>
+          </Card>
         </div>
       </div>
     </section>

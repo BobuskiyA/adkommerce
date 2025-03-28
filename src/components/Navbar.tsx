@@ -20,12 +20,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <svg width="32" height="32" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-                <rect width="1000" height="1000" fill="#4169E1" className="hidden" />
-                <path d="M210 210L790 210L790 790L210 790L210 210Z" fill="none" />
-                <path d="M500 210L790 210L790 500L500 790L210 790L210 500L500 210Z" stroke="white" strokeWidth="100" fill="#4169E1" />
-                <path d="M400 400L600 400L600 600L400 600L400 400Z" stroke="white" strokeWidth="70" fill="#4169E1" />
-              </svg>
+              <img src="/lovable-uploads/e69cde7f-2383-4b10-84ac-de8597479760.png" alt="AdKommerce Logo" className="h-8 w-auto mr-2" />
               <span className="text-2xl font-bold text-brand-primary font-montserrat">AdKommerce</span>
             </Link>
           </div>
