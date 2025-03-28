@@ -20,11 +20,11 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-                <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#0070F3"/>
-                <path d="M14 18.5V29.5H16.5V18.5H14Z" fill="white"/>
-                <path d="M21 18.5V29.5H23.5V25.5H27C29.4853 25.5 31.5 23.4853 31.5 21C31.5 18.5147 29.4853 16.5 27 16.5H21V18.5ZM23.5 18.5H27C28.3807 18.5 29.5 19.6193 29.5 21C29.5 22.3807 28.3807 23.5 27 23.5H23.5V18.5Z" fill="white"/>
-                <path d="M34 16.5V29.5H36.5V16.5H34Z" fill="white"/>
+              <svg width="32" height="32" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
+                <rect width="1000" height="1000" fill="#4169E1" className="hidden" />
+                <path d="M210 210L790 210L790 790L210 790L210 210Z" fill="none" />
+                <path d="M500 210L790 210L790 500L500 790L210 790L210 500L500 210Z" stroke="white" strokeWidth="100" fill="#4169E1" />
+                <path d="M400 400L600 400L600 600L400 600L400 400Z" stroke="white" strokeWidth="70" fill="#4169E1" />
               </svg>
               <span className="text-2xl font-bold text-brand-primary font-montserrat">AdKommerce</span>
             </Link>

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,22 +66,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Brand colors
 				blue: {
 					50: '#ebf5ff',
 					100: '#e1effe',
-					500: '#2563eb',
-					600: '#1e40af',
-					700: '#1a365d'
-				},
-				red: {
-					500: '#dc2626',
-					600: '#b91c1c'
+					500: '#4169E1',
+					600: '#3A5FCA',
+					700: '#2E4CA3'
 				},
 				brand: {
 					primary: '#111111',
 					secondary: '#333333',
-					accent: '#0070f3'
+					accent: '#4169E1'
 				}
 			},
 			borderRadius: {

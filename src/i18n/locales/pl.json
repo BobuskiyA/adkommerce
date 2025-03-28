@@ -11,37 +11,124 @@
   "hero": {
     "growBusiness": "Rozwijaj swój biznes dzięki",
     "dataDriven": "Marketingowi opartemu na danych",
-    "subtitle": "Uzyskaj pierwszych 10 kwalifikowanych spotkań w ciągu zaledwie 5 dni, zaczynając od €0 z naszymi rozwiązaniami marketingowymi bez ryzyka.",
+    "subtitle": "Zdobądź pierwsze 10 kwalifikowanych spotkań w zaledwie 5 dni, zaczynając od €0 z naszymi marketingowymi rozwiązaniami bez ryzyka.",
     "getStarted": "Rozpocznij",
     "talkExpert": "Porozmawiaj z ekspertem",
     "feature1": "Wyniki w 5 dni",
     "feature2": "Dla firm w UE",
     "feature3": "Rozwiązania bez ryzyka"
   },
+  "services": {
+    "title": "Nasze usługi",
+    "subtitle": "Dostosowane rozwiązania marketingowe napędzające wzrost Twojego biznesu",
+    "service1": {
+      "title": "Reklama w mediach społecznościowych",
+      "description": "Ukierunkowane kampanie, które docierają do idealnych klientów na platformach, z których korzystają codziennie."
+    },
+    "service2": {
+      "title": "Optymalizacja SEO",
+      "description": "Zwiększ swoją widoczność dzięki strategiom wyszukiwarek, które napędzają organiczny ruch."
+    },
+    "service3": {
+      "title": "Email Marketing",
+      "description": "Spersonalizowane kampanie e-mailowe, które pielęgnują leady i przekształcają prospekty."
+    },
+    "service4": {
+      "title": "Marketing treści",
+      "description": "Przekonująca treść, która ustanawia autorytet i buduje zaufanie klientów."
+    }
+  },
+  "testimonials": {
+    "title": "Co mówią nasi klienci",
+    "subtitle": "Historie sukcesu firm, które rozwinęły się dzięki naszym rozwiązaniom marketingowym",
+    "testimonial1": {
+      "quote": "AdKommerce dotrzymało obietnicy. Otrzymaliśmy 12 kwalifikowanych spotkań w pierwszym tygodniu, a nasz ROI był niesamowity.",
+      "author": "Sarah Johnson",
+      "company": "TechSolutions Inc."
+    },
+    "testimonial2": {
+      "quote": "Ich podejście oparte na danych przekształciło naszą strategię marketingową. Zaobserwowaliśmy 40% wzrost konwersji od czasu współpracy z nimi.",
+      "author": "Michael Brown",
+      "company": "Growth Partners LLC"
+    },
+    "testimonial3": {
+      "quote": "Model bez ryzyka dał nam pewność, aby wypróbować ich usługi, a oni przekroczyli nasze oczekiwania. Gorąco polecam!",
+      "author": "David Wilson",
+      "company": "Innovate Retail"
+    }
+  },
+  "whyUs": {
+    "title": "Dlaczego wybrać AdKommerce",
+    "subtitle": "Nasze podejście jest inne - skoncentrowane na mierzalnych wynikach i Twoim sukcesie",
+    "reason1": {
+      "title": "Podejście wyniki najpierw",
+      "description": "Odnosimy sukces tylko wtedy, gdy Ty odnosisz sukces. Nasz model opiera się na dostarczaniu spotkań, a nie tylko wrażeń."
+    },
+    "reason2": {
+      "title": "Strategie oparte na danych",
+      "description": "Każda kampania jest wspierana przez analitykę i stale optymalizowana dla maksymalnej wydajności."
+    },
+    "reason3": {
+      "title": "Szybkie wdrożenie",
+      "description": "Nie marnujemy czasu. Nasz usprawniony proces uruchamia kampanie w ciągu dni, a nie tygodni."
+    },
+    "reason4": {
+      "title": "Zero ryzyka",
+      "description": "Zacznij bez kosztów początkowych i zobacz wyniki, zanim zainwestujesz więcej."
+    }
+  },
   "cta": {
-    "title": "Gotowy na 10+ nowych spotkań w ciągu 5 dni?",
-    "subtitle": "Dołącz do naszych klientów, którzy rozwijają swoje firmy dzięki naszym rozwiązaniom marketingowym zorientowanym na wyniki.",
+    "title": "Gotowy na 10+ nowych spotkań w 5 dni?",
+    "subtitle": "Dołącz do naszych klientów, którzy rozwijają swoje firmy dzięki naszym rozwiązaniom marketingowym bez ryzyka, skupionym na wynikach.",
     "getStarted": "Rozpocznij dziś",
     "scheduleCall": "Zaplanuj rozmowę"
   },
   "team": {
     "title": "Poznaj nasz zespół ekspertów",
-    "subtitle": "Pasjonaci, którzy stoją za historiami sukcesu AdKommerce",
+    "subtitle": "Pasjonaci profesjonaliści stojący za historiami sukcesu AdKommerce",
     "photoPlaceholder": "Zdjęcie wkrótce",
     "member1": {
-      "name": "Jan Kowalski",
-      "position": "Założyciel i CEO",
-      "bio": "Z ponad 15-letnim doświadczeniem w marketingu cyfrowym, Jan pomógł setkom firm osiągnąć imponujący wzrost."
+      "name": "Kyryl Homoki",
+      "position": "Dyrektor ds. Marketingu",
+      "bio": "Prowadząc nasz dział marketingu z Nowego Jorku, Kyryl wnosi innowacyjne strategie i głęboką wiedzę branżową, aby pomóc naszym klientom odnieść sukces."
     },
     "member2": {
-      "name": "Anna Nowak",
-      "position": "Strateg marketingowy",
-      "bio": "Była strateg Google z doświadczeniem w tworzeniu wysoko konwertujących kampanii dla firm każdej wielkości."
+      "name": "Oleksandr Bobuskyi",
+      "position": "Dyrektor ds. Rozwoju Stron Internetowych",
+      "bio": "Z siedzibą w Warszawie, Oleksandr prowadzi nasz zespół tworzenia stron internetowych, tworząc wysokiej konwersji strony i cyfrowe doświadczenia."
     },
     "member3": {
-      "name": "Piotr Wiśniewski",
-      "position": "Analityk danych",
-      "bio": "Ekspert analityczny, który przekształca złożone dane w praktyczne spostrzeżenia napędzające wzrost biznesu."
+      "name": "Alan Khamroev",
+      "position": "Główny Menedżer",
+      "bio": "Działając z Nowego Jorku, Alan nadzoruje zarządzanie projektami i zapewnia bezbłędne wykonanie każdej strategii klienta."
     }
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Gotowy, aby rozwijać swój biznes? Porozmawiajmy o Twoich celach marketingowych.",
+    "name": "Imię i nazwisko",
+    "email": "Adres e-mail",
+    "phone": "Numer telefonu",
+    "company": "Nazwa firmy",
+    "message": "Opowiedz nam o swoim biznesie i celach",
+    "submit": "Wyślij zapytanie",
+    "policy": "Wysyłając ten formularz, zgadzasz się z naszą polityką prywatności.",
+    "success": "Dziękujemy! Wkrótce się z Tobą skontaktujemy.",
+    "error": "Wystąpił błąd podczas wysyłania Twojego zapytania. Spróbuj ponownie."
+  },
+  "footer": {
+    "about": "O AdKommerce",
+    "aboutText": "Jesteśmy agencją marketingową opartą na danych, skupioną na dostarczaniu mierzalnych wyników dla firm z UE.",
+    "services": "Usługi",
+    "social": "Media społecznościowe",
+    "email": "Email Marketing",
+    "seo": "SEO i treści",
+    "ppc": "Kampanie PPC",
+    "company": "Firma",
+    "careers": "Kariera",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki korzystania",
+    "contact": "Kontakt",
+    "rights": "© 2023 AdKommerce. Wszelkie prawa zastrzeżone."
   }
 }
