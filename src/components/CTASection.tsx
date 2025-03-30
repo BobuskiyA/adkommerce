@@ -29,9 +29,9 @@ const CTASection = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-white border-white hover:bg-white/10 font-inter"
+            className="text-white border-white hover:bg-white/10 font-inter font-medium"
           >
-            <a href="#contact">{t('cta.scheduleCall')}</a>
+            <a href="#contact" className="text-white">{t('cta.scheduleCall')}</a>
           </Button>
         </div>
       </div>
