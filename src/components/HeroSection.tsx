@@ -2,9 +2,11 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   return (
     <div className="relative bg-gradient-to-b from-gray-50 to-white pt-28 pb-20 sm:pt-36 overflow-hidden">
@@ -40,20 +42,37 @@ const HeroSection = () => {
             </a>
           </div>
           
-          <div className="mt-12 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 text-gray-600">
-            <div className="flex items-center gap-2">
-              <div className="h-10 w-1 bg-brand-accent"></div>
-              <p className="font-medium font-inter">{t('hero.feature1')}</p>
+          {isMobile ? (
+            <div className="mt-12 flex flex-col items-center space-y-4 text-gray-600">
+              <div className="flex items-center w-full max-w-xs">
+                <div className="h-10 w-2 bg-brand-accent mr-3"></div>
+                <p className="font-medium font-inter">{t('hero.feature1')}</p>
+              </div>
+              <div className="flex items-center w-full max-w-xs">
+                <div className="h-10 w-2 bg-brand-accent mr-3"></div>
+                <p className="font-medium font-inter">{t('hero.feature2')}</p>
+              </div>
+              <div className="flex items-center w-full max-w-xs">
+                <div className="h-10 w-2 bg-brand-accent mr-3"></div>
+                <p className="font-medium font-inter">{t('hero.feature3')}</p>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="h-10 w-1 bg-brand-accent"></div>
-              <p className="font-medium font-inter">{t('hero.feature2')}</p>
+          ) : (
+            <div className="mt-12 flex flex-row items-center justify-center md:justify-start gap-6 text-gray-600">
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-1 bg-brand-accent"></div>
+                <p className="font-medium font-inter">{t('hero.feature1')}</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-1 bg-brand-accent"></div>
+                <p className="font-medium font-inter">{t('hero.feature2')}</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-10 w-1 bg-brand-accent"></div>
+                <p className="font-medium font-inter">{t('hero.feature3')}</p>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="h-10 w-1 bg-brand-accent"></div>
-              <p className="font-medium font-inter">{t('hero.feature3')}</p>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
