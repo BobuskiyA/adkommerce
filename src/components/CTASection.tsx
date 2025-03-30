@@ -19,9 +19,9 @@ const CTASection = () => {
           <Button 
             variant="default" 
             size="lg" 
-            className="bg-brand-accent text-white hover:bg-brand-accent/90 font-inter"
+            className="bg-brand-accent text-white hover:bg-brand-accent/90 font-inter font-medium"
           >
-            <a href="#contact" className="flex items-center">
+            <a href="#contact" className="flex items-center text-white font-medium">
               {t('cta.getStarted')}
               <ArrowRight size={20} className="ml-2" />
             </a>
@@ -29,9 +29,9 @@ const CTASection = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="text-white border-white hover:bg-white/10 font-inter font-medium"
+            className="border-white hover:bg-white/10 font-inter font-medium"
           >
-            <a href="#contact" className="text-white">{t('cta.scheduleCall')}</a>
+            <a href="#contact" className="text-white font-medium">{t('cta.scheduleCall')}</a>
           </Button>
         </div>
       </div>
