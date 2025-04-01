@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="text-2xl font-bold text-white mb-4">AdKommerce</div>
             <p className="text-gray-400 mb-4 max-w-md">
-              We are a data-driven marketing agency focused on delivering measurable results for EU businesses.
+              We are a data-driven marketing agency focused on delivering measurable results for businesses.
             </p>
           </div>
 
