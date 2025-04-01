@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { MapPin } from "lucide-react";
 
 const TeamSection = () => {
   const { t } = useTranslation();
@@ -29,7 +30,11 @@ const TeamSection = () => {
             </div>
             <CardHeader className="p-6">
               <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member1.name')}</h3>
-              <p className="text-brand-accent mb-3 font-inter">{t('team.member1.position')}</p>
+              <p className="text-brand-accent mb-2 font-inter">{t('team.member1.position')}</p>
+              <div className="flex items-center text-gray-500 mb-3">
+                <MapPin size={16} className="mr-1" />
+                <span className="text-sm">New York</span>
+              </div>
               <p className="text-gray-600 font-inter">{t('team.member1.bio')}</p>
             </CardHeader>
           </Card>
@@ -44,7 +49,11 @@ const TeamSection = () => {
             </div>
             <CardHeader className="p-6">
               <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member2.name')}</h3>
-              <p className="text-brand-accent mb-3 font-inter">{t('team.member2.position')}</p>
+              <p className="text-brand-accent mb-2 font-inter">{t('team.member2.position')}</p>
+              <div className="flex items-center text-gray-500 mb-3">
+                <MapPin size={16} className="mr-1" />
+                <span className="text-sm">Warsaw</span>
+              </div>
               <p className="text-gray-600 font-inter">{t('team.member2.bio')}</p>
             </CardHeader>
           </Card>
@@ -59,7 +68,11 @@ const TeamSection = () => {
             </div>
             <CardHeader className="p-6">
               <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member3.name')}</h3>
-              <p className="text-brand-accent mb-3 font-inter">{t('team.member3.position')}</p>
+              <p className="text-brand-accent mb-2 font-inter">{t('team.member3.position')}</p>
+              <div className="flex items-center text-gray-500 mb-3">
+                <MapPin size={16} className="mr-1" />
+                <span className="text-sm">New York</span>
+              </div>
               <p className="text-gray-600 font-inter">{t('team.member3.bio')}</p>
             </CardHeader>
           </Card>
