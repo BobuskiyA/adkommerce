@@ -23,31 +23,63 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-      toast({
-        title: "Request Submitted",
-        description: "We'll contact you within 24 hours.",
+    try {
+      // Send email using Email.js service
+      const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          service_id: "service_rnxoi5p", // Replace with your EmailJS service ID
+          template_id: "template_cybn0te", // Replace with your EmailJS template ID
+          user_id: "T8APjjEDWI6ssb55t", // Replace with your EmailJS public key
+          template_params: {
+            to_email: "kiril.homoki@gmail.com",
+            from_name: formData.name,
+            from_email: formData.email,
+            phone: formData.phone,
+            company: formData.company,
+            message: formData.message,
+          },
+        }),
       });
-      
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          company: "",
-          message: ""
+
+      if (response.ok) {
+        setSubmitted(true);
+        toast({
+          title: "Request Submitted",
+          description: "Your message has been sent successfully. We'll contact you within 24 hours.",
         });
-      }, 3000);
-    }, 1500);
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setSubmitted(false);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            message: ""
+          });
+        }, 3000);
+      } else {
+        throw new Error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
