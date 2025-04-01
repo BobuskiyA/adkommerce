@@ -2,17 +2,20 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const TeamSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="team" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4 font-montserrat">
-            Meet Our Expert Team
+            {t('team.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto font-inter">
-            The passionate professionals behind AdKommerce's success stories
+            {t('team.subtitle')}
           </p>
         </div>
         
@@ -26,14 +29,14 @@ const TeamSection = () => {
               />
             </div>
             <CardHeader className="p-6">
-              <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">Kyryl Homoki</h3>
-              <p className="text-brand-accent mb-2 font-inter">Marketing Director</p>
+              <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member1.name')}</h3>
+              <p className="text-brand-accent mb-2 font-inter">{t('team.member1.position')}</p>
               <div className="flex items-center text-gray-500 mb-3">
                 <MapPin size={16} className="mr-1" />
                 <span className="text-sm">New York</span>
               </div>
               <p className="text-gray-600 font-inter">
-                Leading our marketing department from New York, Kyryl brings innovative strategies and deep industry knowledge to help our clients succeed.
+                {t('team.member1.bio')}
               </p>
             </CardHeader>
           </Card>
@@ -47,14 +50,14 @@ const TeamSection = () => {
               />
             </div>
             <CardHeader className="p-6">
-              <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">Oleksandr Bobuskyi</h3>
-              <p className="text-brand-accent mb-2 font-inter">Web Development Director</p>
+              <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member2.name')}</h3>
+              <p className="text-brand-accent mb-2 font-inter">{t('team.member2.position')}</p>
               <div className="flex items-center text-gray-500 mb-3">
                 <MapPin size={16} className="mr-1" />
                 <span className="text-sm">Warsaw</span>
               </div>
               <p className="text-gray-600 font-inter">
-                Based in Warsaw, Oleksandr leads our web development team, creating high-converting websites and digital experiences.
+                {t('team.member2.bio')}
               </p>
             </CardHeader>
           </Card>
@@ -68,14 +71,14 @@ const TeamSection = () => {
               />
             </div>
             <CardHeader className="p-6">
-              <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">Alan Khamroev</h3>
-              <p className="text-brand-accent mb-2 font-inter">Chief Manager</p>
+              <h3 className="text-xl font-bold text-brand-primary mb-1 font-montserrat">{t('team.member3.name')}</h3>
+              <p className="text-brand-accent mb-2 font-inter">{t('team.member3.position')}</p>
               <div className="flex items-center text-gray-500 mb-3">
                 <MapPin size={16} className="mr-1" />
                 <span className="text-sm">New York</span>
               </div>
               <p className="text-gray-600 font-inter">
-                Operating from New York, Alan oversees project management and ensures flawless execution of every client strategy.
+                {t('team.member3.bio')}
               </p>
             </CardHeader>
           </Card>

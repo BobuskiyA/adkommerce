@@ -1,16 +1,19 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const CTASection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-brand-primary py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-montserrat">
-          Ready to Get 10+ New Appointments in 5 Days?
+          {t('cta.title')}
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto font-inter">
-          Join our clients who are growing their businesses with our risk-free, results-focused marketing solutions.
+          {t('cta.subtitle')}
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button 
@@ -19,7 +22,7 @@ const CTASection = () => {
             className="bg-brand-accent hover:bg-brand-accent/90 font-inter font-medium text-white"
           >
             <a href="#contact" className="flex items-center text-white font-medium">
-              Get Started Today
+              {t('cta.getStarted')}
               <ArrowRight size={20} className="ml-2" />
             </a>
           </Button>
@@ -28,7 +31,7 @@ const CTASection = () => {
             size="lg" 
             className="border-white hover:bg-white/10 font-inter font-medium text-white"
           >
-            <a href="#contact" className="text-white font-medium">Schedule a Call</a>
+            <a href="#contact" className="text-white font-medium">{t('cta.scheduleCall')}</a>
           </Button>
         </div>
       </div>
