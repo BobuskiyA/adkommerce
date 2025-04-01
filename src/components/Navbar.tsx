@@ -3,12 +3,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,28 +24,26 @@ const Navbar = () => {
           
           <div className="hidden md:flex md:items-center md:space-x-6">
             <Link to="/" className="text-gray-700 hover:text-brand-accent px-3 py-2 text-sm font-medium font-inter transition-colors">
-              {t('navbar.home')}
+              Home
             </Link>
             <a href="#services" className="text-gray-700 hover:text-brand-accent px-3 py-2 text-sm font-medium font-inter transition-colors">
-              {t('navbar.services')}
+              Services
             </a>
             <a href="#why-us" className="text-gray-700 hover:text-brand-accent px-3 py-2 text-sm font-medium font-inter transition-colors">
-              {t('navbar.whyUs')}
+              Why Us
             </a>
             <a href="#team" className="text-gray-700 hover:text-brand-accent px-3 py-2 text-sm font-medium font-inter transition-colors">
-              {t('navbar.team')}
+              Our Team
             </a>
             <a href="#contact" className="text-gray-700 hover:text-brand-accent px-3 py-2 text-sm font-medium font-inter transition-colors">
-              {t('navbar.contact')}
+              Contact
             </a>
-            <LanguageSwitcher />
             <Button variant="default" className="ml-4 font-medium font-inter bg-brand-accent hover:bg-brand-accent/90">
-              {t('navbar.getStarted')}
+              Get Started
             </Button>
           </div>
           
           <div className="flex items-center md:hidden">
-            <LanguageSwitcher />
             <button
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-brand-accent focus:outline-none ml-2"
@@ -68,39 +63,39 @@ const Navbar = () => {
               className="text-gray-700 hover:text-brand-accent block px-3 py-2 text-base font-medium font-inter"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navbar.home')}
+              Home
             </Link>
             <a
               href="#services"
               className="text-gray-700 hover:text-brand-accent block px-3 py-2 text-base font-medium font-inter"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navbar.services')}
+              Services
             </a>
             <a
               href="#why-us"
               className="text-gray-700 hover:text-brand-accent block px-3 py-2 text-base font-medium font-inter"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navbar.whyUs')}
+              Why Us
             </a>
             <a
               href="#team"
               className="text-gray-700 hover:text-brand-accent block px-3 py-2 text-base font-medium font-inter"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navbar.team')}
+              Our Team
             </a>
             <a
               href="#contact"
               className="text-gray-700 hover:text-brand-accent block px-3 py-2 text-base font-medium font-inter"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navbar.contact')}
+              Contact
             </a>
             <div className="mt-4 px-3">
               <Button variant="default" className="w-full font-medium font-inter bg-brand-accent hover:bg-brand-accent/90">
-                {t('navbar.getStarted')}
+                Get Started
               </Button>
             </div>
           </div>

@@ -1,9 +1,7 @@
 
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,48 +11,48 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="text-2xl font-bold text-white mb-4">AdKommerce</div>
             <p className="text-gray-400 mb-4 max-w-md">
-              {t('footer.aboutText')}
+              We are a data-driven marketing agency focused on delivering measurable results for EU businesses.
             </p>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">{t('footer.company')}</h3>
+            <h3 className="text-lg font-medium mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-400 hover:text-white transition-colors">
-                  {t('navbar.home')}
+                  Home
                 </Link>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-white transition-colors">
-                  {t('navbar.services')}
+                  Services
                 </a>
               </li>
               <li>
                 <a href="#why-us" className="text-gray-400 hover:text-white transition-colors">
-                  {t('navbar.whyUs')}
+                  Why Us
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-gray-400 hover:text-white transition-colors">
-                  {t('navbar.contact')}
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">{t('footer.contact')}</h3>
+            <h3 className="text-lg font-medium mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Email: info@adkommerce.com</li>
-              <li>{t('contact.phone')}: +1 (555) 123-4567</li>
+              <li>Phone: +1 (555) 123-4567</li>
               <li>New York & Warsaw</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>{t('footer.rights').replace('2023', currentYear.toString())}</p>
+          <p>© {currentYear} AdKommerce. All rights reserved.</p>
         </div>
       </div>
     </footer>
