@@ -4,19 +4,19 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     content: "We were skeptical about the 10 appointments in 5 days claim, but AdKomemerce delivered 12 qualified leads in the first week. Their approach is refreshingly straightforward and effective.",
-    author: "Jennifer Martinez",
+    author: "Mykhailo Melnyk",
     role: "CEO, TechSolution Inc.",
     rating: 5
   },
   {
     content: "Working with AdKomemerce transformed our lead generation process. Their data-driven approach eliminated guesswork and delivered consistent results from day one.",
-    author: "Michael Johnson",
+    author: "Jennifer Cooper",
     role: "Marketing Director, GrowFast Services",
     rating: 5
   },
   {
     content: "The $0 upfront model made it an easy decision to try AdKomemerce. What kept us as clients was the consistent ROI and their transparent reporting on every dollar spent.",
-    author: "Sarah Wilson",
+    author: "Sarah Malkovicz",
     role: "Owner, Wilson Consulting Group",
     rating: 5
   }

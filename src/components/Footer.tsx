@@ -44,8 +44,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-medium mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: info@adkommerce.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>Email: kiril.homoki@gmail.com</li>
+              <li>Phone: +1 (929) 268-6962</li>
               <li>New York & Warsaw</li>
             </ul>
           </div>
