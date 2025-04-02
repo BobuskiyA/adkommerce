@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,9 +25,9 @@ const CTASection = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-white hover:bg-white/10 font-inter font-medium text-white"
+            className="border-white text-black hover:bg-white hover:text-white font-inter font-medium"
           >
-            <a href="#contact" className="text-white font-medium">Schedule a Call</a>
+            <a href="#contact" className="font-medium">Schedule a Call</a>
           </Button>
         </div>
       </div>

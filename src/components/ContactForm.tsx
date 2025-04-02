@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Check, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,28 +17,27 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
+
     try {
-      // Send email using Email.js service
       const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          service_id: "service_rnxoi5p", // Replace with your EmailJS service ID
-          template_id: "template_cybn0te", // Replace with your EmailJS template ID
-          user_id: "T8APjjEDWI6ssb55t", // Replace with your EmailJS public key
+          service_id: "service_dcx69y3", // Замініть на свій EmailJS service ID
+          template_id: "template_rq19q0z", // Замініть на свій EmailJS template ID
+          user_id: "sir88GhhoYRxjgHX1", // Замініть на свій EmailJS public key
           template_params: {
-            to_email: "kiril.homoki@gmail.com",
+            to_email: "kiril.homoki@gmail.com", 
             from_name: formData.name,
             from_email: formData.email,
             phone: formData.phone,
@@ -55,8 +53,7 @@ const ContactForm = () => {
           title: "Request Submitted",
           description: "Your message has been sent successfully. We'll contact you within 24 hours.",
         });
-        
-        // Reset form after 3 seconds
+
         setTimeout(() => {
           setSubmitted(false);
           setFormData({
@@ -146,7 +143,6 @@ const ContactForm = () => {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                     Email Address *
@@ -162,7 +158,6 @@ const ContactForm = () => {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                     Phone Number *
@@ -178,7 +173,6 @@ const ContactForm = () => {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
                     Company Name
@@ -193,7 +187,6 @@ const ContactForm = () => {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                     Tell us about your business
@@ -208,7 +201,6 @@ const ContactForm = () => {
                     className="w-full"
                   />
                 </div>
-                
                 <div>
                   <Button 
                     type="submit" 
