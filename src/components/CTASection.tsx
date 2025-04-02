@@ -25,7 +25,7 @@ const CTASection = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-white text-black hover:bg-white hover:text-white font-inter font-medium"
+            className="border-white text-black hover:bg-white/90"
           >
             <a href="#contact" className="font-medium">Schedule a Call</a>
           </Button>
